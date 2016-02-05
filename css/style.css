@@ -15,3 +15,172 @@ h2 {
 	font-size: 21px;
 	line-height: 26px;
 }
+/*сетка для главной страницы*/
+.clearfix::after {
+  content: "";
+	display: table;
+  clear: both;
+}
+
+.container {
+	width: 1200px;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+
+.welcome-to-sedona{
+	height: 725px;
+	background-image: url("../img/background-photo.jpg");
+	padding-top: 1px;
+}
+
+.welcome-to-sedona img {
+	display:block;
+	margin-bottom: 64px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.welcome-to-sedona img:first-child {
+	margin-top: 75px;
+}
+
+.welcome-to-sedona-title {
+	margin-top: 140px;
+	text-align: center;
+	height: 214px;
+}
+
+ .benefits-blue {
+	width: 400px;
+	height: 256px; 
+  float: left;
+  text-align: center;
+}
+
+ .benefits-picture {
+	width: 800px;
+	height: 256px;
+	float: left;
+}
+.benefits-white {
+  width: 400px;
+	height: 330px;
+	float: left;
+	text-align: center;
+}
+.benefits-gray {
+	width: 400px;
+	height: 256px; 
+  float: left;
+  text-align: center;
+}
+
+.post-benefits {
+	height: 290px;
+	text-align: center;
+}
+
+
+.search-hotels form fieldset {
+width:565px;
+height:480px;
+margin-left: auto;
+margin-right: auto;
+background: white;
+}
+
+.main-footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer-visitsedona {
+	display: block;
+  float: left;
+  width: 240px;
+  margin-right: 87px;
+  margin-left: 73px;
+  min-height: 120px;
+}
+
+.footer-social {
+  float: left;
+  width: 400px;
+  min-height: 120px;
+  margin-right: 87px;
+}
+
+.footer-copyright {
+  float: left;
+  width: 240px;
+  min-height: 120px;
+  margin-right: 73px;
+}
+
+/* сетка для каталога*/
+
+.filter-infrastructure {
+	width: 240px;
+	margin-left: 73px;
+	float: left;
+	min-height: 215px;
+}
+
+.filter-property-type {
+	width: 287px;
+	float:left;
+	margin-right: 200px;
+	min-height: 215px;
+}
+
+.filter-price {
+ width: 327px;
+ margin-right: 73px;
+ float: right;
+ min-height: 215px;
+}
+.sorting {
+	min-height: 85px;
+	width: 1200px;
+}
+.sorting h2 {
+	width: 120px;
+	margin-left: 73px;
+	min-height: 85px;
+	float: left;
+}
+.sorting-type {
+	width: 694px;
+	min-height: 85px;
+	float: left;
+}
+
+.sort-asc-dsc {
+	float: right;
+	width: 240px;
+	margin-right: 73px;
+}
+
+.search-result-item {
+	min-height: 150px;
+}
+.search-result-img {
+	width: 134px;
+	margin-left: 73px;
+	margin-right: 30px;
+	float: left;
+}
+
+ .search-result-item .description {
+ 	width: 563px;
+ 	margin-right: 87px;
+ 	float: left;
+ 	min-height: 150px;
+}
+.search-result-item .rating {
+	width: 240px;
+	margin-right: 73px;
+	float: right;
+
+}
