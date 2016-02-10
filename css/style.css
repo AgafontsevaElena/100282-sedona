@@ -2,92 +2,174 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Bold", "Arial", "Helvetica", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   color: black;
   font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 h1 {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 h2 {
-	font-size: 21px;
-	line-height: 26px;
+  font-size: 21px;
+  line-height: 21px;
+}
+h3 {
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 14px;
 }
 /*сетка для главной страницы*/
 .clearfix::after {
   content: "";
-	display: table;
+  display: table;
   clear: both;
 }
 
 .container {
-	width: 1200px;
-	padding: 0px;
-	margin: 0 auto;
+  width: 1200px;
+  padding: 0px;
+  margin: 0 auto;
 }
+
+/* header*/
+.main-header {
+  background-color: white;
+  height: 56px;
+  background: red;
+  margin-bottom: 0px;
+}
+
+.main-header .container {
+  position: relative;
+  background: yellow;
+  margin-bottom: 0px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  background: blue;
+  display: block;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.main-header .header-logo {
+  position: absolute;
+  height: 70px;
+  top: 0px;
+  left: 530px;
+}
+
+/*header end*/
 
 
 .welcome-to-sedona{
-	height: 725px;
-	background-image: url("../img/background-photo.jpg");
-	padding-top: 1px;
+  height: 725px;
+  background-image: url("../img/background-photo.jpg");
+  padding-top: 1px;
 }
 
 .welcome-to-sedona img {
-	display:block;
-	margin-bottom: 64px;
-	margin-left: auto;
-	margin-right: auto;
+  display:block;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .welcome-to-sedona img:first-child {
-	margin-top: 75px;
+  margin-top: 75px;
 }
 
 .welcome-to-sedona-title {
-	margin-top: 140px;
-	text-align: center;
-	height: 214px;
+  margin-top: 140px;
+  text-align: center;
+  height: 214px;
 }
 
- .benefits-blue {
-	width: 400px;
-	height: 256px; 
+.benefits-blue {
+ 
+  background-color: #81b3d2;
+  color: white;
+  width: 400px;
+  height: 256px; 
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+.benefits-blue h2 {
+  margin-top: 52px;
+}
+
+.benefits-picture {
+  width: 800px;
+  height: 256px;
+  float: left;
+}
+.benefits-white {
+  width: 400px;
+  height: 330px;
   float: left;
   text-align: center;
 }
 
- .benefits-picture {
-	width: 800px;
-	height: 256px;
-	float: left;
+.benefits-white-picture {
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
-.benefits-white {
-  width: 400px;
-	height: 330px;
-	float: left;
-	text-align: center;
-}
+
 .benefits-gray {
-	width: 400px;
-	height: 256px; 
+  width: 400px;
+  height: 256px; 
   float: left;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.benefits-gray h2 {
+  margin-top: 45px;
+}
+
+.post-benefits {
+  height: 290px;
   text-align: center;
 }
 
 .post-benefits {
-	height: 290px;
-	text-align: center;
+  padding: 1;
+  border: 1px solid green;
+}
+.post-benefits h1 {
+  margin-top: 54px;
+  border: 1px solid green;
+}
+.post-benefits h3 {
+  line-height: 24px;
 }
 
-
 .search-hotels form fieldset {
-width:565px;
-height:480px;
-margin-left: auto;
-margin-right: auto;
-background: white;
+  width:565px;
+  height:480px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
 }
 
 .main-footer {
@@ -96,7 +178,7 @@ background: white;
 }
 
 .footer-visitsedona {
-	display: block;
+  display: block;
   float: left;
   width: 240px;
   margin-right: 87px;
@@ -121,66 +203,65 @@ background: white;
 /* сетка для каталога*/
 
 .filter-infrastructure {
-	width: 240px;
-	margin-left: 73px;
-	float: left;
-	min-height: 215px;
+  width: 240px;
+  margin-left: 73px;
+  float: left;
+  min-height: 215px;
 }
 
 .filter-property-type {
-	width: 287px;
-	float:left;
-	margin-right: 200px;
-	min-height: 215px;
+  width: 287px;
+  float:left;
+  margin-right: 200px;
+  min-height: 215px;
 }
 
 .filter-price {
- width: 327px;
- margin-right: 73px;
- float: right;
- min-height: 215px;
+  width: 327px;
+  margin-right: 73px;
+  float: right;
+  min-height: 215px;
 }
 .sorting {
-	min-height: 85px;
-	width: 1200px;
+  min-height: 85px;
+  width: 1200px;
 }
 .sorting h2 {
-	width: 120px;
-	margin-left: 73px;
-	min-height: 85px;
-	float: left;
+  width: 120px;
+  margin-left: 73px;
+  min-height: 85px;
+  float: left;
 }
 .sorting-type {
-	width: 694px;
-	min-height: 85px;
-	float: left;
+  width: 694px;
+  min-height: 85px;
+  float: left;
 }
 
 .sort-asc-dsc {
-	float: right;
-	width: 240px;
-	margin-right: 73px;
+  float: right;
+  width: 240px;
+  margin-right: 73px;
 }
 
 .search-result-item {
-	min-height: 150px;
+  min-height: 150px;
 }
 .search-result-img {
-	width: 134px;
-	margin-left: 73px;
-	margin-right: 30px;
-	float: left;
+  width: 134px;
+  margin-left: 73px;
+  margin-right: 30px;
+  float: left;
 }
 
- .search-result-item .description {
- 	width: 563px;
- 	margin-right: 87px;
- 	float: left;
- 	min-height: 150px;
+.search-result-item .description {
+  width: 563px;
+  margin-right: 87px;
+  float: left;
+  min-height: 150px;
 }
 .search-result-item .rating {
-	width: 240px;
-	margin-right: 73px;
-	float: right;
-
+  width: 240px;
+  margin-right: 73px;
+  float: right;
 }
