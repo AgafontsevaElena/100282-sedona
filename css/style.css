@@ -51,15 +51,26 @@ h3 {
 
 .main-navigation ul {
   margin: 0;
-  padding: 0;
+  padding: 0 73px;
   list-style: none;
   font-size: 0;
 }
+.main-navigation ul div {
+  width: 50%;
+  display: inline-block;
+}
+
+.main-navigation ul div.right {
+  text-align: right;
+}
+
 .main-navigation li {
   display: inline-block;
+  width: 180px;
   font-size: 14px;
   line-height: 16px;
   vertical-align: top;
+  text-align: center;
 }
 
 .main-navigation a {
@@ -154,22 +165,93 @@ h3 {
 
 .post-benefits {
   padding: 1;
-  border: 1px solid green;
 }
 .post-benefits h1 {
   margin-top: 54px;
-  border: 1px solid green;
 }
 .post-benefits h3 {
   line-height: 24px;
 }
 
-.search-hotels form fieldset {
+.search-hotels {
+  position: absolute;
+  top: -85px;
+  left: 315px;
   width:565px;
   height:480px;
   margin-left: auto;
   margin-right: auto;
-  background: white;
+  background: white; 
+}
+.search-hotels-title {
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  height: 55px;
+  background-color: #766357;
+  line-height: 26px;
+  padding-top: 30px;
+}
+.map {
+  position: relative;
+  background-image: url(../img/map.jpg);
+  height: 590px;
+}
+
+.search-hotels .btn {
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  width: 455px;
+  height: 60px;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  position: absolute;
+  top: 370px;
+  left: 55px;
+  border: 0px;
+}
+.form-check-in {
+  margin-top: 56px;
+  margin-left: 52px;
+}
+#check-in-edit {
+  width: 345px;
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0px;
+  margin-left: 18px;
+}
+.form-check-out {
+  margin-top: 28px;
+  margin-left: 52px;
+} 
+#check-out-edit {
+  width: 345px;
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0px;
+  margin-left: 16px;
+}
+
+.search-hotels-updown {
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 52px;
+}
+.search-hotels-updown-edit {
+  display: inline-block;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+.search-hotels-updown-edit button, .search-hotels-updown-edit input {
+  border: none;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.search-hotels-updown-edit button {
+  cursor: pointer;
 }
 
 .main-footer {
@@ -184,6 +266,7 @@ h3 {
   margin-right: 87px;
   margin-left: 73px;
   min-height: 120px;
+  font-size: 21px;
 }
 
 .footer-social {
@@ -191,6 +274,16 @@ h3 {
   width: 400px;
   min-height: 120px;
   margin-right: 87px;
+}
+.social-btn {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #81b3d2;
 }
 
 .footer-copyright {
@@ -200,6 +293,10 @@ h3 {
   margin-right: 73px;
 }
 
+.footer-copyright b {
+  font-size: 14px;
+  font-weight: normal;
+}
 /* сетка для каталога*/
 
 .filter-infrastructure {

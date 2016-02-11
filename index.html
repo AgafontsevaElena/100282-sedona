@@ -12,10 +12,14 @@
             <div class="container">
                 <nav class="main-navigation">
                     <ul>
-                        <li><a href="#">Инфомация</a></li>
-                        <li><a href="#">Фото и видео</a></li>
-                        <li class="active"><a href="#">Карта штата</a></li>
-                        <li class="last"><a href="#">Гостиницы</a></li>
+                        <div>
+                            <li><a href="#">Инфомация</a></li>
+                            <li><a href="#">Фото и видео</a></li>
+                        </div>
+                        <div class="right">
+                            <li><a href="#">Карта штата</a></li>
+                            <li><a href="#">Гостиницы</a></li>
+                        </div>
                     </ul>
                 </nav>
                 <div class="header-logo">
@@ -98,45 +102,50 @@
                     <h3>Укажите продполагаемые даты поездки,<br>
                         и мы покажем вам лучшие продложения гостиниц в седоне</h3>
                 </div>
-
+            <div class="map">
                 <div class="search-hotels">
                     <form action="#" method="get">
-                        <fieldset>
-                            <legend>Поиск гостиницы в Седоне</legend>
+                        
+                        <div class="search-hotels-title">Поиск гостиницы в Седоне</div>
 
-                            <div class="form-check-in">
-                                <label for="check-in-edit">Дата заезда:</label>
-                                <input id="check-in-edit" type="date" name="check-in">
-                            </div>
+                        <div class="form-check-in">
+                            <label for="check-in-edit">Дата заезда:</label>
+                            <input id="check-in-edit" type="date" name="check-in">
+                        </div>
 
 
-                            <div class="form-check-out">
-                                <label for="check-out-edit">Дата выезда:</label>
-                                <input id="check-out-edit" type="date" name="check-out">
-                            </div>
+                        <div class="form-check-out">
+                            <label for="check-out-edit">Дата выезда:</label>
+                            <input id="check-out-edit" type="date" name="check-out">
+                        </div>
 
-                            <div class="search-hotels-updown">
-                                <label>Взрослые:
+                        <div class="search-hotels-updown">
+                            <label>Взрослые:
+                                <div class="search-hotels-updown-edit">
                                     <button id="down-adults-btn">-</button>
-                                    <input id="adults-edit" type="text" size="1" name="adults">
+                                    <input id="adults-edit" type="text" size="1" name="adults" value="2">
                                     <button id="up-adults-btn">+</button>
-                                </label>
-                            </div>
+                                </div>
+                            </label>
+                        </div>
 
-                            <div class="search-hotels-updown">
-                                <label>Дети:
+                        <div class="search-hotels-updown">
+                            <label>Дети:
+                                <div class="search-hotels-updown-edit">
                                     <button id="down-children-btn">-</button>
                                     <input id="children-edit" type="text" size="1" name="children">
                                     <button id="up-children-btn">+</button>
-                                </label>
-                            </div>
+                                </div>
+                            </label>
+                        </div>
 
-                            <input type="submit" name="search" value="Найти">  
-                             
-                        </fieldset>
+                        <input class="btn" type="submit" name="search" value="Найти">  
+                         
+                        
                     </form>
                 </div>  
             </div> 
+        </div>
         </main> 
 
         <footer class="main-footer">
@@ -148,8 +157,8 @@
                     <a class="social-btn social-btn-youtube" href="#">youtube</a>
                 </section>
                 <section class="footer-copyright">
-                    <p>Website by</p>
-                    <a class="btn" href="https://htmlacademy.ru">html Academy</a>
+                    <b>Website by</b>
+                    <a class="btn" href="https://htmlacademy.ru"><img  src="img/htmlacademy.png"></a>
                 </section>
             </div>
         </footer>
