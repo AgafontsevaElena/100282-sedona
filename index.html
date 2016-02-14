@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="css/normalize.css">
         <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -111,20 +112,22 @@
                         <div class="form-check-in">
                             <label for="check-in-edit">Дата заезда:</label>
                             <input id="check-in-edit" type="date" name="check-in">
+                            <span class="icon-calendar"></span>
                         </div>
 
 
                         <div class="form-check-out">
                             <label for="check-out-edit">Дата выезда:</label>
                             <input id="check-out-edit" type="date" name="check-out">
-                        </div>
+                            <span class="icon-calendar"></span>
+                        </div>s
 
                         <div class="search-hotels-updown">
                             <label>Взрослые:
                                 <div class="search-hotels-updown-edit">
-                                    <button id="down-adults-btn">-</button>
+                                    <button id="down-adults-btn"><span class="icon-minus"></span></button>
                                     <input id="adults-edit" type="text" size="1" name="adults" value="2">
-                                    <button id="up-adults-btn">+</button>
+                                    <button id="up-adults-btn"><span class="icon-plus"></span></button>
                                 </div>
                             </label>
                         </div>
@@ -132,9 +135,9 @@
                         <div class="search-hotels-updown">
                             <label>Дети:
                                 <div class="search-hotels-updown-edit">
-                                    <button id="down-children-btn">-</button>
+                                    <button id="down-children-btn"><span class="icon-minus"></span></button>
                                     <input id="children-edit" type="text" size="1" name="children">
-                                    <button id="up-children-btn">+</button>
+                                    <button id="up-children-btn"><span class="icon-plus"></span></button>
                                 </div>
                             </label>
                         </div>
@@ -152,9 +155,9 @@
             <div class="container clearfix">
                 <span class="footer-visitsedona">#VISITSEDONA</span>
                 <section class="footer-social">
-                    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-youtube" href="#">youtube</a>
+                    <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+                    <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+                    <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
                 </section>
                 <section class="footer-copyright">
                     <b>Website by</b>

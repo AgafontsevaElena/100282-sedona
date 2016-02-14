@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -11,10 +13,14 @@
             <div class="container">
                 <nav class="main-navigation">
                     <ul>
-                        <li><a href="#">Инфомация</a></li>
-                        <li><a href="#">Фото и видео</a></li>
-                        <li><a href="#">Карта штата</a></li>
-                        <li><a href="#">Гостиницы</a></li>
+                        <div>
+                            <li><a href="#">Инфомация</a></li>
+                            <li><a href="#">Фото и видео</a></li>
+                        </div>
+                        <div class="right">
+                            <li><a href="#">Карта штата</a></li>
+                            <li><a href="#">Гостиницы</a></li>
+                        </div>
                     </ul>
                 </nav>
                 <div class="header-logo">
@@ -84,14 +90,14 @@
                     <div class="sorting-type">
                         <h4>Сортировка:</h4>
                         <ul>
-                            <li><a href="">По цене</a></li>
-                            <li><a href="">По типу</a></li>
-                            <li><a href="">По рейтингу</a></li>
+                            <li><a href="#">По цене</a></li>
+                            <li><a href="#">По типу</a></li>
+                            <li><a href="#">По рейтингу</a></li>
                         </ul>
                     </div>
                     <div class="sort-asc-dsc">
-                        <span class="sort-ascending"><a href=""></a></span>
-                        <span class="sort-descending"><a href=""></a></span>
+                        <span class="icon-up-dir"><a href=""></a></span>
+                        <span class="icon-down-dir"><a href=""></a></span>
                     </div>
                 </div>
 
@@ -104,15 +110,17 @@
                             <h2>Amara resort &#38; SPA</h2>
                             <span>Гостиница</span>
                             <span>от 3500</span>
-                            <button class="blue">Подробнее</button>
-                            <button class="brown">Забронировать</button>
+                            <div class="discription-button">
+                                <button class="blue">Подробнее</button>
+                                <button class="brown">Забронировать</button>
+                            </div>
                         </div>
                         <div class="rating">
                             <div class="rating-star">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
                             </div>
                             <span class="rating-score">Рейтинг:8,5</span>
                         </div>
@@ -125,13 +133,15 @@
                             <h2>Desert Quail Inn</h2>
                             <span>Мотель</span>
                             <span>от 2000</span>
-                            <button class="blue">Подробнее</button>
-                            <button class="brown">Забронировать</button>
+                            <div class="discription-button">
+                                <button class="blue">Подробнее</button>
+                                <button class="brown">Забронировать</button>
+                            </div>
                         </div>
                         <div class="rating">
                             <div class="rating-star">
-                                <span></span>
-                                <span></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
                             </div>
                             <span class="rating-score">Рейтинг:8,9</span>
                         </div>
@@ -144,14 +154,16 @@
                             <h2>Villas at Poco Diablo</h2>
                             <span>Апартаменты</span>
                             <span>от 4000</span>
-                            <button class="blue">Подробнее</button>
-                            <button class="brown">Забронировать</button>
+                            <div class="discription-button">
+                                <button class="blue">Подробнее</button>
+                                <button class="brown">Забронировать</button>
+                            </div>
                         </div>
                         <div class="rating">
                             <div class="rating-star">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
                             </div>
                             <span class="rating-score">Рейтинг:9,2</span>
                         </div>
@@ -165,13 +177,13 @@
             <div class="container clearfix">
                 <span class="footer-visitsedona">#VISITSEDONA</span>
                 <section class="footer-social">
-                    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-youtube" href="#">youtube</a>
+                    <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+                    <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+                    <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
                 </section>
                 <section class="footer-copyright">
-                    <p>Website by</p>
-                    <a class="btn" href="https://htmlacademy.ru">html Academy</a>
+                    <b>Website by</b>
+                    <a class="btn" href="https://htmlacademy.ru"><img  src="img/htmlacademy.png"></a>
                 </section>
             </div>
         </footer>
