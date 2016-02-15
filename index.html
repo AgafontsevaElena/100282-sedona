@@ -36,7 +36,7 @@
                     <img src="img/Sedona.png" alt="Sedona">
                     <img src="img/Because.png" alt="Because the Grand Canyon sucks">
                     <div class="welcome-to-sedona-title">
-                        <h2>Седона-небольшой городок в Аризоне, заслуживающий большего</h2>
+                        <h2>Седона-небольшой городок в Аризоне,<br> заслуживающий большего</h2>
                         <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h3>
                     </div>
                 </div>
@@ -103,24 +103,22 @@
                     <h3>Укажите продполагаемые даты поездки,<br>
                         и мы покажем вам лучшие продложения гостиниц в седоне</h3>
                 </div>
-            <div class="map">
-                <div class="search-hotels">
-                    <form action="#" method="get">
-                        
-                        <div class="search-hotels-title">Поиск гостиницы в Седоне</div>
-
-                        <div class="form-check-in">
-                            <label for="check-in-edit">Дата заезда:</label>
-                            <input id="check-in-edit" type="date" name="check-in">
-                            <span class="icon-calendar"></span>
+                <div class="map">
+                    <div class="search-hotels">
+                        <form action="#" method="get">
+                            <div class="search-hotels-title">Поиск гостиницы в Седоне</div>
+                                <div class="form-check-in">
+                                    <label for="check-in-edit">Дата заезда:</label>
+                                    <input id="check-in-edit" type="text" name="check-in">
+                                    <span class="icon-calendar"></span>
                         </div>
 
 
                         <div class="form-check-out">
                             <label for="check-out-edit">Дата выезда:</label>
-                            <input id="check-out-edit" type="date" name="check-out">
+                            <input id="check-out-edit" type="text" name="check-out">
                             <span class="icon-calendar"></span>
-                        </div>s
+                        </div>
 
                         <div class="search-hotels-updown">
                             <label>Взрослые:
@@ -141,10 +139,7 @@
                                 </div>
                             </label>
                         </div>
-
                         <input class="btn" type="submit" name="search" value="Найти">  
-                         
-                        
                     </form>
                 </div>  
             </div> 
@@ -153,7 +148,9 @@
 
         <footer class="main-footer">
             <div class="container clearfix">
-                <span class="footer-visitsedona">#VISITSEDONA</span>
+                <section class="footer-visitsedona">
+                    <span>#VISITSEDONA</span>
+                </section>
                 <section class="footer-social">
                     <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
                     <a class="social-btn" href="#"><span class="icon-facebook"></span></a>

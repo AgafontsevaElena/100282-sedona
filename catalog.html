@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -67,15 +67,13 @@
                         </div>
 
                         <div class="filter-price">
-                            <h2>Стоимость в сутки (р):</h2>
+                            <div class="filter-price-title">Стоимость в сутки (р):</div>
                             <div class="filter-price-range">
-                                <div class="price-display">
-                                    <label for="price-min">от</label>
-                                    <input id="price-min" type="text" name="price">
-                                </div>
-                                <div class="price-display">
-                                    <label for="price-max">до</label>
-                                    <input id="price-max" type="text" name="price">
+                                <div class="price-controls">
+                                    <label for="min-price">от</label>
+                                    <input id="min-price" type="text" name="min-price" value="0">
+                                    <label for="max-price">до</label>
+                                    <input id="max-price" type="text" name="max-price" value="3000">
                                 </div>
                             </div>
                             <div class="filter-price-slider">
@@ -84,6 +82,7 @@
                         </div>
                     </form>
                 </div>
+               
 
                 <div class="sorting clearfix">
                     <h2>Найдено:3</h2>
@@ -175,7 +174,9 @@
 
         <footer class="main-footer">
             <div class="container clearfix">
-                <span class="footer-visitsedona">#VISITSEDONA</span>
+               <section class="footer-visitsedona">
+                    <span>#VISITSEDONA</span>
+                </section>
                 <section class="footer-social">
                     <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
                     <a class="social-btn" href="#"><span class="icon-facebook"></span></a>

@@ -7,6 +7,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
+  background-color: white;
 }
 @font-face {
   font-weight: normal;
@@ -75,10 +76,12 @@ h3 {
   width: 1200px;
   padding: 0px;
   margin: 0 auto;
+  box-shadow: -9px 0 20px -10px #333, 
+              9px 0 20px  -10px #333;
 }
 
 .main-header {
-  background-color: white;
+  background-color: #FFFFFF;
   height: 56px;
   margin-bottom: 0px;
 }
@@ -236,7 +239,7 @@ h3 {
 
 .map {
   position: relative;
-  background-image: url(../img/map.jpg);
+  background-image: url("../img/map.jpg");
   height: 590px;
 }
 
@@ -330,6 +333,9 @@ margin-right: 50px;
   color: #a9a9a9;
 }
 
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .main-footer .container {
   width: 1056px;
   padding: 35px 72px;
@@ -383,7 +389,7 @@ line-height: 46px;
 
 /* сетка для каталога*/
 .filters {
-  background-image: url(../img/filter-background.jpg);
+  background-image: url("../img/filter-background.jpg");
   color: white;
   min-height: 215px; 
 }
