@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -111,39 +111,39 @@
                                     <label for="check-in-edit">Дата заезда:</label>
                                     <input id="check-in-edit" type="text" name="check-in">
                                     <span class="icon-calendar"></span>
-                        </div>
-
-
-                        <div class="form-check-out">
-                            <label for="check-out-edit">Дата выезда:</label>
-                            <input id="check-out-edit" type="text" name="check-out">
-                            <span class="icon-calendar"></span>
-                        </div>
-
-                        <div class="search-hotels-updown">
-                            <label>Взрослые:
-                                <div class="search-hotels-updown-edit">
-                                    <button id="down-adults-btn"><span class="icon-minus"></span></button>
-                                    <input id="adults-edit" type="text" size="1" name="adults" value="2">
-                                    <button id="up-adults-btn"><span class="icon-plus"></span></button>
                                 </div>
-                            </label>
-                        </div>
 
-                        <div class="search-hotels-updown">
-                            <label>Дети:
-                                <div class="search-hotels-updown-edit">
-                                    <button id="down-children-btn"><span class="icon-minus"></span></button>
-                                    <input id="children-edit" type="text" size="1" name="children">
-                                    <button id="up-children-btn"><span class="icon-plus"></span></button>
-                                </div>
-                            </label>
-                        </div>
-                        <input class="btn" type="submit" name="search" value="Найти">  
-                    </form>
-                </div>  
-            </div> 
-        </div>
+
+                            <div class="form-check-out">
+                                 <label for="check-out-edit">Дата выезда:</label>
+                                <input id="check-out-edit" type="text" name="check-out">
+                                <span class="icon-calendar"></span>
+                             </div>
+
+                            <div class="search-hotels-updown">
+                                <label>Взрослые:
+                                    <div class="search-hotels-updown-edit">
+                                        <button id="down-adults-btn"><span class="icon-minus"></span></button>
+                                        <input id="adults-edit" type="text" size="3" name="adults" value="2">
+                                        <button id="up-adults-btn"><span class="icon-plus"></span></button>
+                                 </div>
+                                </label>
+                            </div>
+
+                            <div class="search-hotels-updown search-hotels-updown-children ">
+                                <label>Дети:
+                                    <div class="search-hotels-updown-edit">
+                                        <button id="down-children-btn"><span class="icon-minus"></span></button>
+                                        <input id="children-edit" type="text" size="3" name="children" value="0">
+                                        <button id="up-children-btn"><span class="icon-plus"></span></button>
+                                    </div>
+                                </label>
+                            </div>
+                            <input class="btn" type="submit" name="search" value="Найти">  
+                        </form>
+                    </div>  
+                </div> 
+            </div>
         </main> 
 
         <footer class="main-footer">

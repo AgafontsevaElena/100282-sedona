@@ -131,8 +131,9 @@ h3 {
 
 
 .welcome-to-sedona{
-  height: 725px;
-  background-image: url("../img/background-photo.jpg");
+  max-height: 723px;
+  background-image: url("../img/background-photo1.jpg");
+  background-repeat: no-repeat;
   padding-top: 1px;
 }
 
@@ -220,8 +221,8 @@ h3 {
   position: absolute;
   top: -85px;
   left: 315px;
-  width:565px;
-  height:480px;
+  width:568px;
+  height:481px;
   margin-left: auto;
   margin-right: auto;
   background: white; 
@@ -247,19 +248,19 @@ h3 {
   font-size: 21px;
   color: white;
   text-align: center;
-  width: 455px;
-  height: 60px;
+  width: 460px;
+  height: 58px;
   background-color: #81b3d2;
   text-transform: uppercase;
   position: absolute;
-  top: 370px;
-  left: 55px;
+  top: 368px;
+  left: 54px;
   border: 0px;
 }
 
 .form-check-in {
-  margin-top: 56px;
-  margin-left: 52px;
+  margin-top: 55px;
+  margin-left: 56px;
   position: relative;
 }
 
@@ -273,7 +274,7 @@ h3 {
 
 .form-check-out {
   margin-top: 28px;
-  margin-left: 52px;
+  margin-left: 55px;
   position: relative;
 } 
 
@@ -285,21 +286,24 @@ h3 {
   margin-left: 16px;
 }
 
-.search-hotels-updown-edit {
-margin-left: 5px;
-margin-right: 50px;
-}
-
 .search-hotels-updown {
   display: inline-block;
-  margin-top: 28px;
-  margin-left: 52px;
+  margin-top: 31px;
+  margin-left: 55px;
 }
 
 .search-hotels-updown-edit {
   display: inline-block;
-  padding: 4px;
+  padding: 6px 4px;
   background-color: #f2f2f2;
+  margin-left: 38px;
+}
+.search-hotels-updown-children {
+  margin-left: 48px;
+}
+
+.search-hotels-updown-children .search-hotels-updown-edit {
+  margin-left: 25px;
 }
 
 .search-hotels-updown-edit button, .search-hotels-updown-edit input {
@@ -313,7 +317,7 @@ margin-right: 50px;
   color: #c2c2c2;
   position: absolute;
   line-height: 36px;
-  right: 64px;
+  right: 60px;
 }
 
 .form-check-out .icon-calendar {
@@ -321,7 +325,7 @@ margin-right: 50px;
   color: #c2c2c2;
   position: absolute;
   line-height: 36px;
-  right: 64px;
+  right: 60px;
 }
 
 .search-hotels-updown-edit button {
@@ -335,6 +339,9 @@ margin-right: 50px;
 
 .main-footer {
   background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 350px;
+  top: 2600px;
 }
 .main-footer .container {
   width: 1056px;
@@ -437,13 +444,145 @@ line-height: 46px;
 .filter-property-type {
   width: 275px;
   float:left;
-  margin-right: 200px;
+  margin-right: 197px;
 }
 
-.filter-price {
-  width: 327px;
-  margin-right: 73px;
+.filter-range {
+  width: 330px;
+  margin-right: 72px;
+  margin-top: 28px;
   float: right;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .sorting {
