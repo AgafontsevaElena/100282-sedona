@@ -8,29 +8,30 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
-        <header class="main-header">
-            <div class="container">
+        <div class="container">
+            <header class="main-header">
                 <nav class="main-navigation">
-                    <ul>
-                        <div>
-                            <li><a href="#">Инфомация</a></li>
-                            <li><a href="#">Фото и видео</a></li>
-                        </div>
-                        <div class="right">
-                            <li><a href="#">Карта штата</a></li>
-                            <li><a href="#">Гостиницы</a></li>
-                        </div>
+                    <ul class="menu clearfix">
+                        <li class="menu-item">
+                            <a href="#">Информация</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="#">Гостиницы</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header-logo">
                     <a href="#"><img class="product-img" src="img/logo-top.png"></a>
-                </div>
-            </div>
-        </header>
+                </div> 
+            </header>
 
-        <main>
-            <div class="container">
+            <main>
                 <div class="filters clearfix">
                     <form action="/" method="get">
                         <div class="filter-infrastructure">
@@ -86,18 +87,18 @@
                
 
                 <div class="sorting clearfix">
-                    <h2>Найдено:3</h2>
+                    <h2>Найдено: 3</h2>
                     <div class="sorting-type">
                         <h4>Сортировка:</h4>
                         <ul>
-                            <li><a href="#">По цене</a></li>
+                            <li class="sorting-type-active"><a href="#">По цене</a></li>
                             <li><a href="#">По типу</a></li>
                             <li><a href="#">По рейтингу</a></li>
                         </ul>
                     </div>
                     <div class="sort-asc-dsc">
-                        <span class="icon-up-dir"><a href=""></a></span>
-                        <span class="icon-down-dir"><a href=""></a></span>
+                        <a href=""><span class="icon-up-dir"></span></a>
+                        <a href=""><span class="icon-down-dir sort-asc-dsc-active"></span></a>
                     </div>
                 </div>
 
@@ -107,8 +108,8 @@
                             <img src="img/hotel1.jpg">
                         </div>
                         <div class="description">
-                            <h2>Amara resort &#38; SPA</h2>
-                            <span>Гостиница</span>
+                            <a href="#"><h2>Amara resort &#38; SPA</h2></a>
+                            <span class="description-span-item1">Гостиница</span>
                             <span>от 3500</span>
                             <div class="discription-button">
                                 <button class="blue">Подробнее</button>
@@ -130,8 +131,8 @@
                             <img src="img/hotel2.jpg">
                         </div>
                         <div class="description">
-                            <h2>Desert Quail Inn</h2>
-                            <span>Мотель</span>
+                            <a href="#"><h2>Desert Quail Inn</h2></a>
+                            <span class="description-span-item2">Мотель</span>
                             <span>от 2000</span>
                             <div class="discription-button">
                                 <button class="blue">Подробнее</button>
@@ -151,8 +152,8 @@
                             <img src="img/hotel3.jpg">
                         </div>
                         <div class="description">
-                            <h2>Villas at Poco Diablo</h2>
-                            <span>Апартаменты</span>
+                            <a href="#"><h2>Villas at Poco Diablo</h2></a>
+                            <span class="description-span-item3">Апартаменты</span>
                             <span>от 4000</span>
                             <div class="discription-button">
                                 <button class="blue">Подробнее</button>
@@ -168,14 +169,12 @@
                             <span class="rating-score">Рейтинг:9,2</span>
                         </div>
                     </div>
-                </div>
-            </div> 
-        </main>
+                </div> 
+            </main>
 
 
-        <footer class="main-footer">
-            <div class="container clearfix">
-               <section class="footer-visitsedona">
+            <footer class="main-footer clearfix">
+                <section class="footer-visitsedona">
                     <span>#VISITSEDONA</span>
                 </section>
                 <section class="footer-social">
@@ -184,10 +183,11 @@
                     <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
                 </section>
                 <section class="footer-copyright">
-                    <b>Website by</b>
-                    <a class="btn" href="https://htmlacademy.ru"><img  src="img/htmlacademy.png"></a>
+                    <span>Website by</span>
+                    <a class="btn" href="https://htmlacademy.ru"></a> 
                 </section>
-            </div>
-        </footer>
-  </body>
+            </footer>
+        </div>
+    </body>
 </html>
+
