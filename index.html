@@ -8,35 +8,37 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="container">
 
-        <header class="main-header">
-            <div class="container">
+            <header class="main-header">
                 <nav class="main-navigation">
-                    <ul>
-                        <div>
-                            <li><a href="#">Инфомация</a></li>
-                            <li><a href="#">Фото и видео</a></li>
-                        </div>
-                        <div class="right">
-                            <li><a href="#">Карта штата</a></li>
-                            <li><a href="#">Гостиницы</a></li>
-                        </div>
+                    <ul class="menu clearfix">
+                        <li class="menu-item">
+                            <a href="#">Информация</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Гостиницы</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="header-logo">
-                    <a href="#"><img class="product-img" src="img/logo-top.png"></a>
+                    <a href="#"><img class="product-img" src="img/logo-top.png" width="138" height="77" alt="City of Sedona"></a>
                 </div> 
-            </div>
-        </header>
+            </header>
 
-        <main>
-            <div class="container">
+            <main>
                 <div class="welcome-to-sedona">
                     <img src="img/Welcome.png" alt="Welcome to the gargeous">
                     <img src="img/Sedona.png" alt="Sedona">
                     <img src="img/Because.png" alt="Because the Grand Canyon sucks">
                     <div class="welcome-to-sedona-title">
-                        <h2>Седона-небольшой городок в Аризоне,<br> заслуживающий большего</h2>
+                        <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
                         <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h3>
                     </div>
                 </div>
@@ -46,32 +48,38 @@
                     <section class="benefits-blue">
                         <h2>Настоящий<br> городок</h2>
                         <span class="benefits-number">№1</span>
-                        <h3>Седона - не аттракцион для туристов,<br> там течет своя жизнь</h3>
+                        <h3>Седона — не аттракцион для туристов,<br> там течет своя жизнь</h3>
                     </section>
                     <div class="benefits-picture">
-                        <img src="img/picture-row1.jpg">
+                        <img src="img/picture-row1.jpg" width="800" height="256" alt="House">
                     </div>
                 </div>
                 <div class="benefits-row2 clearfix">
                     <section class="benefits-white">
-                       <div class="benefits-white-picture"><img src="img/icon-house.png"></div>
+                        <div class="benefits-white-picture">
+                            <img src="img/icon-house.png" width="75" height="72" alt="house">
+                        </div>
                         <h2>Жилье</h2>
                         <h3>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</h3>
                     </section>
                     <section class="benefits-white">
-                        <div class="benefits-white-picture"><img src="img/icon-food.png"></div>
+                        <div class="benefits-white-picture">
+                            <img src="img/icon-food.png" width="74" height="70" alt="food">
+                        </div>
                         <h2>Еда</h2>
                         <h3>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</h3>
                     </section>
                     <section class="benefits benefits-white">
-                        <div class="benefits-white-picture"><img src="img/icon-souvenir.png"></div>
+                        <div class="benefits-white-picture benefits-white-picture-souvenir">
+                            <img src="img/icon-souvenir.png" width="64" height="76" alt="present">
+                        </div>
                         <h2>Сувениры</h2>
                         <h3>Не только китайского,<br> но и местного производства!</h3>
                     </section>
                 </div>   
                 <div class="benefits-row3 clearfix">
                     <div class="benefits-picture">
-                        <img src="img/picture-row3.jpg">
+                        <img src="img/picture-row3.jpg" width="800" height="256" alt="bridge">
                     </div>
                     <section class="benefits-blue">
                         <h2>Там есть<br>мост дьявола</h2>
@@ -105,49 +113,44 @@
                 </div>
                 <div class="map">
                     <div class="search-hotels">
+                        <button class="search-hotels-title">Поиск гостиницы в Седоне</button>
                         <form action="#" method="get">
-                            <div class="search-hotels-title">Поиск гостиницы в Седоне</div>
-                                <div class="form-check-in">
-                                    <label for="check-in-edit">Дата заезда:</label>
-                                    <input id="check-in-edit" type="text" name="check-in">
-                                    <span class="icon-calendar"></span>
-                                </div>
-
+                            <div class="form-check-in">
+                                <label for="check-in-edit">Дата заезда:</label>
+                                <input id="check-in-edit" type="text" name="check-in">
+                                <span class="icon-calendar"></span>
+                            </div>
 
                             <div class="form-check-out">
-                                 <label for="check-out-edit">Дата выезда:</label>
+                                <label for="check-out-edit">Дата выезда:</label>
                                 <input id="check-out-edit" type="text" name="check-out">
                                 <span class="icon-calendar"></span>
-                             </div>
+                            </div>
 
                             <div class="search-hotels-updown">
-                                <label>Взрослые:
-                                    <div class="search-hotels-updown-edit">
-                                        <button id="down-adults-btn"><span class="icon-minus"></span></button>
-                                        <input id="adults-edit" type="text" size="3" name="adults" value="2">
-                                        <button id="up-adults-btn"><span class="icon-plus"></span></button>
-                                 </div>
-                                </label>
+                                <label for="adults-edit">Взрослые:</label>
+                                <div class="search-hotels-updown-edit">
+                                    <button id="down-adults-btn"><span class="icon-minus"></span></button>
+                                    <input id="adults-edit" type="text" size="3" name="adults" value="2">
+                                    <button id="up-adults-btn"><span class="icon-plus"></span></button>
+                                </div>
                             </div>
 
                             <div class="search-hotels-updown search-hotels-updown-children ">
-                                <label>Дети:
-                                    <div class="search-hotels-updown-edit">
-                                        <button id="down-children-btn"><span class="icon-minus"></span></button>
-                                        <input id="children-edit" type="text" size="3" name="children" value="0">
-                                        <button id="up-children-btn"><span class="icon-plus"></span></button>
-                                    </div>
-                                </label>
+                                <label for="children-edit">Дети:</label>
+                                <div class="search-hotels-updown-edit">
+                                    <button id="down-children-btn"><span class="icon-minus"></span></button>
+                                    <input id="children-edit" type="text" size="3" name="children" value="0">
+                                    <button id="up-children-btn"><span class="icon-plus"></span></button>
+                                </div>
                             </div>
                             <input class="btn" type="submit" name="search" value="Найти">  
                         </form>
                     </div>  
                 </div> 
-            </div>
-        </main> 
+            </main> 
 
-        <footer class="main-footer">
-            <div class="container clearfix">
+            <footer class="main-footer clearfix main-footer-index">
                 <section class="footer-visitsedona">
                     <span>#VISITSEDONA</span>
                 </section>
@@ -157,10 +160,11 @@
                     <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
                 </section>
                 <section class="footer-copyright">
-                    <b>Website by</b>
-                    <a class="btn" href="https://htmlacademy.ru"><img  src="img/htmlacademy.png"></a>
+                    <span>Website by</span>
+                    <a class="btn" href="https://htmlacademy.ru">
+                    </a> 
                 </section>
-            </div>
-        </footer>
-  </body>
+            </footer>
+        </div>
+    </body>
 </html>
