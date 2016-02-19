@@ -23,12 +23,12 @@
                             <a href="#">Карта штата</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Гостиницы</a>
+                            <a href="catalog.html">Гостиницы</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header-logo">
-                    <a href="#"><img class="product-img" src="img/logo-top.png" width="138" height="77" alt="City of Sedona"></a>
+                    <a href="#"><img class="product-img" src="img/logo-top.png" width="138" height="70" alt="City of Sedona"></a>
                 </div> 
             </header>
 
@@ -166,5 +166,13 @@
                 </section>
             </footer>
         </div>
+        <script>
+            var button = document.querySelector(".search-hotels-title"),
+                form = document.querySelector(".search-hotels form");
+
+            button.addEventListener("click", function() { 
+                form.classList.toggle("show");
+            });
+        </script>
     </body>
 </html>
