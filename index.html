@@ -5,7 +5,7 @@
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylemin.css">
     </head>
     <body>
         <div class="container">
@@ -34,9 +34,9 @@
 
             <main>
                 <div class="welcome-to-sedona">
-                    <img src="img/Welcome.png" alt="Welcome to the gargeous">
-                    <img src="img/Sedona.png" alt="Sedona">
-                    <img src="img/Because.png" alt="Because the Grand Canyon sucks">
+                    <img src="img/Welcome.png" width="256" height="86" alt="Welcome to the gargeous">
+                    <img src="img/Sedona.png" width="458" height="78" alt="Sedona">
+                    <img src="img/Because.png" width="296" height="80" alt="Because the Grand Canyon sucks">
                     <div class="welcome-to-sedona-title">
                         <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
                         <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h3>
@@ -166,13 +166,6 @@
                 </section>
             </footer>
         </div>
-        <script>
-            var button = document.querySelector(".search-hotels-title"),
-                form = document.querySelector(".search-hotels form");
-
-            button.addEventListener("click", function() { 
-                form.classList.toggle("show");
-            });
-        </script>
+        <script type="text/javascript" src="js/scriptmin.js"></script>
     </body>
 </html>
