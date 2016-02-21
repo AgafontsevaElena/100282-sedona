@@ -117,13 +117,13 @@ h3 {
     color: #b2b2b2;
 }
 
-.main-navigation .active a{
+.menu-item-active a{
     color: #9b8d84;
 }
-.main-navigation .active a:hover {
+.menu-item-active a:hover {
     color: #604e43;
 }
-.main-navigation .active a:active {
+.menu-item-active a:active {
     color: #d6d0cc;
 }
 
@@ -277,7 +277,7 @@ button.search-hotels-title {
     background: #ffffff; 
     box-shadow: 1px 1px 20px 2px #333;
 }
-.search-hotels form.show {
+.search-hotels .show {
     display: block;
 }
 
@@ -287,7 +287,7 @@ button.search-hotels-title {
     height: 590px;
 }
 
-.search-hotels input.btn {
+.search-hotels .btn {
     font-size: 21px;
     color: white;
     text-align: center;
@@ -301,11 +301,11 @@ button.search-hotels-title {
     outline: none;
 }
 
-.search-hotels input.btn:hover {
+.search-hotels .btn:hover {
     background-color: #669ec0;
 }
 
-.search-hotels input.btn:active {
+.search-hotels .btn:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
 }
