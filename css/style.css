@@ -368,12 +368,14 @@ button.search-hotels-title {
 
 .search-hotels-updown {
     display: inline-block;
+    vertical-align: middle;
     margin-top: 31px;
     margin-left: 55px;
 }
 
 .search-hotels-updown-edit {
     display: inline-block;
+    vertical-align: middle;
     padding: 6px 4px;
     background-color: #f2f2f2;
     margin-left: 38px;
@@ -485,8 +487,8 @@ button.search-hotels-title {
 }
 
 .social-btn span {
-font-size: 19px;
-line-height: 46px;
+    font-size: 19px;
+    line-height: 46px;
 }
 
 .footer-copyright {
@@ -729,6 +731,7 @@ line-height: 46px;
 
 .sorting-type li {
     display: inline-block;
+    vertical-align: baseline;
     font-size: 12px;
     line-height: 18px;
     text-align: center;
@@ -793,6 +796,7 @@ line-height: 46px;
 
 .search-result-item .search-result-img {
     display: inline-block;
+    vertical-align: middle;
     width: 134px;
     margin-right: 28px;
 }
