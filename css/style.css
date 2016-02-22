@@ -136,7 +136,7 @@ h3 {
 
 .welcome-to-sedona {
     height: 508px;
-    background-color: #E0F8F7;
+    background-color: #E4F1F9;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     padding-top: 1px;
@@ -306,6 +306,7 @@ button.search-hotels-title {
 
 .map {
     position: relative;
+    background-color: #F2F1EF;
     background-image: url("../img/map.jpg");
     height: 590px;
 }
@@ -339,54 +340,34 @@ button.search-hotels-title {
     position: relative;
 }
 
-#check-in-edit {
-    width: 331px;
-    height: 36px;
-    background-color: #f2f2f2;
-    border: 0px;
-    margin-left: 18px;
-    padding-left: 14px;
-    text-transform: uppercase;
-}
-
-#check-in-edit:hover {
-    background-color: #ebebeb;
-}
-
-#check-in-edit:focus {
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    outline: none;
-    width: 327px;
-    height: 32px;
-}
-
 .form-check-out {
     margin-top: 28px;
     margin-left: 55px;
     position: relative;
 } 
 
-#check-out-edit {
-    width: 331px;
-    height: 36px;
+.check-date {
+    width: 296px;
+    height: 32px;
     background-color: #f2f2f2;
-    border: 0px;
+    border: 2px solid #f2f2f2;
     margin-left: 16px;
     padding-left: 14px;
-    text-transform: uppercase;
+    padding-right: 35px;
+    text-transform: uppercase;   
+}
+#check-out-edit {
+    margin-left: 14px;
 }
 
-#check-out-edit:hover {
+.check-date:hover {
     background-color: #ebebeb;
 }
 
-#check-out-edit:focus {
+.check-date:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     outline: none;
-    width: 327px;
-    height: 32px;
 }
 
 .search-hotels-updown {
@@ -547,6 +528,7 @@ button.search-hotels-title {
 
 /* сетка для каталога*/
 .filters {
+    background-color: #809EC0;
     background-image: url("../img/filter-background1.jpg");
     color: white;
     min-height: 217px; 
