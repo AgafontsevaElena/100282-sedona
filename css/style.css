@@ -197,8 +197,38 @@ h3 {
     float: left;
     text-align: center;
 }
-
-.benefits-white-picture {
+.benefits-white::before {
+    
+    content: "";
+    width: 76px;
+    height: 76px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 31px;
+    display: block;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    
+}
+.sprite-icon-food::before {
+    width: 74px;
+    height: 70px;
+    background-position: -5px -152px;
+}
+.sprite-icon-house::before {
+    width: 75px;
+    height: 72px;
+    background-position: -5px -232px;
+}
+.sprite-souvenirs::before {
+    margin-top: 56px;
+    margin-bottom: 30px;
+    width: 64px;
+    height: 76px;
+    background-position: -5px -314px;
+}
+/*.benefits-white-picture {
     display: inline-block;
     width: 76px;
     height: 76px;
@@ -210,7 +240,7 @@ h3 {
     margin-top: 56px;
     margin-bottom: 12px;
 }
-
+*/
 .benefits-white h2 {
     margin-bottom: 25px;
 }
