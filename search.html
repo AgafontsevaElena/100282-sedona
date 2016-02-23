@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <ul class="menu clearfix">
+                        <li class="menu-item">
+                            <a href="#">Информация</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="catalog.html">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-logo">
+                    <a href="#"><img class="product-img" src="img/logo-top.png" width="138" height="70" alt="City of Sedona"></a>
+                </div> 
+            </header>
+
+            <main>
+                <div class="search-hotels-view">
+                    
+                    <form action="#" method="get" class="search-hotels-form">
+                        <div class="form-check-in">   
+                            <label for="check-in-edit">Дата заезда:</label>
+                            <input id="check-in-edit" class="check-date" type="text" name="check-in">
+                            <span class="icon-calendar"></span>
+                        </div>
+
+                        <div class="form-check-out">
+                            <label for="check-out-edit">Дата выезда:</label>
+                            <input id="check-out-edit" class="check-date" type="text" name="check-out">
+                            <span class="icon-calendar"></span>
+                        </div>
+
+                        <div class="search-hotels-updown">
+                            <label for="adults-edit">Взрослые:</label>
+                            <div class="search-hotels-updown-edit">
+                                <button id="down-adults-btn"><span class="icon-minus"></span></button>
+                                <input id="adults-edit" type="text" size="3" name="adults" value="2">
+                                <button id="up-adults-btn"><span class="icon-plus"></span></button>
+                            </div>
+                        </div>
+
+                        <div class="search-hotels-updown search-hotels-updown-children ">
+                            <label for="children-edit">Дети:</label>
+                            <div class="search-hotels-updown-edit">
+                                <button id="down-children-btn"><span class="icon-minus"></span></button>
+                                <input id="children-edit" type="text" size="3" name="children" value="0">
+                                <button id="up-children-btn"><span class="icon-plus"></span></button>
+                            </div>
+                        </div>
+                        <input class="btn" type="submit" name="search" value="Найти">  
+                    </form>
+                </div>
+            </main>
+
+            <footer class="main-footer clearfix">
+                <section class="footer-visitsedona">
+                    <span>#VISITSEDONA</span>
+                </section>
+                <section class="footer-social">
+                    <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+                    <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+                    <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
+                </section>
+                <section class="footer-copyright">
+                    <span>Website by</span>
+                    <a class="btn" href="https://htmlacademy.ru">
+                    </a> 
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>
